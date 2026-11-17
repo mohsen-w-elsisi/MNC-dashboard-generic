@@ -7,6 +7,52 @@
     <title>data-vis-proj-frontend</title>
   </head>
   <body>
+    <header>
+      <h1>sales board</h1>
+      <nav>
+        <button id="button-tab-1">over view</button>
+        <button id="button-tab-2">Details pie</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="tab-1">
+        <article id="kpis">
+          <div class="kpi-box">
+            <span class="kpi-label">Revenue this year</span>
+            <strong class="kpi-value">$0</strong>
+          </div>
+
+          <div class="kpi-box">
+            <span class="kpi-label">Sales this year</span>
+            <strong class="kpi-value">0</strong>
+          </div>
+
+          <div class="kpi-box">
+            <span class="kpi-label">Global market share</span>
+            <strong class="kpi-value">0%</strong>
+          </div>
+
+          <div class="kpi-box">
+            <span class="kpi-label">Operating countries</span>
+            <strong class="kpi-value">0</strong>
+          </div>
+        </article>
+
+        <article id="bullet-chart">world</article>
+        
+        <article id="share-price-chart"></article>
+      </section>
+
+      <section id="tab-2">
+        <form id="filters"></form>
+        <div id="market-share-chloropleth"></div>
+        <div id="sales-bar-chart"></div>
+        <div id="sales-timeseries"></div>
+        <div id="market-share-timeseries"></div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
