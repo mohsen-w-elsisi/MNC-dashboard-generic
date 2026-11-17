@@ -1,0 +1,1330 @@
+{
+  "marketShare": [
+    {
+      "year": 2017,
+      "country": "USA",
+      "ourCompany": 22.0,
+      "competitor1": 38.0,
+      "competitor2": 25.0,
+      "others": 15.0
+    },
+    {
+      "year": 2018,
+      "country": "USA",
+      "ourCompany": 23.5,
+      "competitor1": 37.0,
+      "competitor2": 24.8,
+      "others": 14.7
+    },
+    {
+      "year": 2019,
+      "country": "USA",
+      "ourCompany": 25.0,
+      "competitor1": 36.2,
+      "competitor2": 24.5,
+      "others": 14.3
+    },
+    {
+      "year": 2020,
+      "country": "USA",
+      "ourCompany": 26.5,
+      "competitor1": 35.5,
+      "competitor2": 24.0,
+      "others": 14.0
+    },
+    {
+      "year": 2021,
+      "country": "USA",
+      "ourCompany": 28.0,
+      "competitor1": 34.7,
+      "competitor2": 23.5,
+      "others": 13.8
+    },
+    {
+      "year": 2022,
+      "country": "USA",
+      "ourCompany": 29.5,
+      "competitor1": 33.8,
+      "competitor2": 23.0,
+      "others": 13.7
+    },
+    {
+      "year": 2023,
+      "country": "USA",
+      "ourCompany": 31.0,
+      "competitor1": 33.0,
+      "competitor2": 22.5,
+      "others": 13.5
+    },
+    {
+      "year": 2024,
+      "country": "USA",
+      "ourCompany": 32.8,
+      "competitor1": 32.0,
+      "competitor2": 22.0,
+      "others": 13.2
+    },
+    {
+      "year": 2025,
+      "country": "USA",
+      "ourCompany": 34.6,
+      "competitor1": 31.0,
+      "competitor2": 21.5,
+      "others": 12.9
+    },
+    {
+      "year": 2026,
+      "country": "USA",
+      "ourCompany": 36.5,
+      "competitor1": 30.0,
+      "competitor2": 21.0,
+      "others": 12.5
+    },
+    {
+      "year": 2017,
+      "country": "Germany",
+      "ourCompany": 18.0,
+      "competitor1": 42.0,
+      "competitor2": 28.0,
+      "others": 12.0
+    },
+    {
+      "year": 2018,
+      "country": "Germany",
+      "ourCompany": 19.1,
+      "competitor1": 41.4,
+      "competitor2": 27.5,
+      "others": 12.0
+    },
+    {
+      "year": 2019,
+      "country": "Germany",
+      "ourCompany": 20.3,
+      "competitor1": 40.7,
+      "competitor2": 27.0,
+      "others": 12.0
+    },
+    {
+      "year": 2020,
+      "country": "Germany",
+      "ourCompany": 21.5,
+      "competitor1": 40.0,
+      "competitor2": 26.5,
+      "others": 12.0
+    },
+    {
+      "year": 2021,
+      "country": "Germany",
+      "ourCompany": 22.6,
+      "competitor1": 39.5,
+      "competitor2": 26.0,
+      "others": 11.9
+    },
+    {
+      "year": 2022,
+      "country": "Germany",
+      "ourCompany": 23.8,
+      "competitor1": 39.0,
+      "competitor2": 25.5,
+      "others": 11.7
+    },
+    {
+      "year": 2023,
+      "country": "Germany",
+      "ourCompany": 25.0,
+      "competitor1": 38.5,
+      "competitor2": 25.0,
+      "others": 11.5
+    },
+    {
+      "year": 2024,
+      "country": "Germany",
+      "ourCompany": 26.5,
+      "competitor1": 37.7,
+      "competitor2": 24.5,
+      "others": 11.3
+    },
+    {
+      "year": 2025,
+      "country": "Germany",
+      "ourCompany": 28.0,
+      "competitor1": 36.8,
+      "competitor2": 24.0,
+      "others": 11.2
+    },
+    {
+      "year": 2026,
+      "country": "Germany",
+      "ourCompany": 29.5,
+      "competitor1": 36.0,
+      "competitor2": 23.5,
+      "others": 11.0
+    },
+    {
+      "year": 2017,
+      "country": "Egypt",
+      "ourCompany": 15.0,
+      "competitor1": 45.0,
+      "competitor2": 25.0,
+      "others": 15.0
+    },
+    {
+      "year": 2018,
+      "country": "Egypt",
+      "ourCompany": 18.0,
+      "competitor1": 43.3,
+      "competitor2": 24.0,
+      "others": 14.7
+    },
+    {
+      "year": 2019,
+      "country": "Egypt",
+      "ourCompany": 21.0,
+      "competitor1": 41.6,
+      "competitor2": 23.0,
+      "others": 14.4
+    },
+    {
+      "year": 2020,
+      "country": "Egypt",
+      "ourCompany": 24.0,
+      "competitor1": 40.0,
+      "competitor2": 22.0,
+      "others": 14.0
+    },
+    {
+      "year": 2021,
+      "country": "Egypt",
+      "ourCompany": 27.2,
+      "competitor1": 38.1,
+      "competitor2": 21.3,
+      "others": 13.4
+    },
+    {
+      "year": 2022,
+      "country": "Egypt",
+      "ourCompany": 30.3,
+      "competitor1": 36.3,
+      "competitor2": 20.7,
+      "others": 12.7
+    },
+    {
+      "year": 2023,
+      "country": "Egypt",
+      "ourCompany": 33.5,
+      "competitor1": 34.5,
+      "competitor2": 20.0,
+      "others": 12.0
+    },
+    {
+      "year": 2024,
+      "country": "Egypt",
+      "ourCompany": 36.0,
+      "competitor1": 33.0,
+      "competitor2": 19.3,
+      "others": 11.7
+    },
+    {
+      "year": 2025,
+      "country": "Egypt",
+      "ourCompany": 38.5,
+      "competitor1": 31.5,
+      "competitor2": 18.7,
+      "others": 11.3
+    },
+    {
+      "year": 2026,
+      "country": "Egypt",
+      "ourCompany": 41.0,
+      "competitor1": 30.0,
+      "competitor2": 18.0,
+      "others": 11.0
+    },
+    {
+      "year": 2022,
+      "country": "Qatar",
+      "ourCompany": 20.0,
+      "competitor1": 40.0,
+      "competitor2": 25.0,
+      "others": 15.0
+    },
+    {
+      "year": 2023,
+      "country": "Qatar",
+      "ourCompany": 22.0,
+      "competitor1": 38.0,
+      "competitor2": 24.0,
+      "others": 16.0
+    },
+    {
+      "year": 2024,
+      "country": "Qatar",
+      "ourCompany": 24.0,
+      "competitor1": 36.0,
+      "competitor2": 23.0,
+      "others": 17.0
+    },
+    {
+      "year": 2025,
+      "country": "Qatar",
+      "ourCompany": 26.0,
+      "competitor1": 34.0,
+      "competitor2": 22.0,
+      "others": 18.0
+    }
+  ],
+  "sharePrice": [
+    {
+      "date": "2017-01-01",
+      "open": 42.5,
+      "high": 43.75,
+      "low": 41.82,
+      "close": 42.5
+    },
+    {
+      "date": "2017-02-01",
+      "open": 42.54,
+      "high": 43.75,
+      "low": 40.75,
+      "close": 43.1
+    },
+    {
+      "date": "2017-03-01",
+      "open": 42.27,
+      "high": 45.13,
+      "low": 40.87,
+      "close": 43.8
+    },
+    {
+      "date": "2017-04-01",
+      "open": 44.65,
+      "high": 46.25,
+      "low": 42.88,
+      "close": 44.2
+    },
+    {
+      "date": "2017-05-01",
+      "open": 45.0,
+      "high": 46.38,
+      "low": 43.27,
+      "close": 44.9
+    },
+    {
+      "date": "2017-06-01",
+      "open": 44.12,
+      "high": 45.77,
+      "low": 42.7,
+      "close": 45.1
+    },
+    {
+      "date": "2017-07-01",
+      "open": 46.05,
+      "high": 47.77,
+      "low": 44.58,
+      "close": 45.75
+    },
+    {
+      "date": "2017-08-01",
+      "open": 46.31,
+      "high": 47.12,
+      "low": 44.68,
+      "close": 46.2
+    },
+    {
+      "date": "2017-09-01",
+      "open": 45.45,
+      "high": 48.79,
+      "low": 43.48,
+      "close": 46.9
+    },
+    {
+      "date": "2017-10-01",
+      "open": 47.82,
+      "high": 49.09,
+      "low": 45.4,
+      "close": 47.4
+    },
+    {
+      "date": "2017-11-01",
+      "open": 46.13,
+      "high": 49.44,
+      "low": 45.12,
+      "close": 48.1
+    },
+    {
+      "date": "2017-12-01",
+      "open": 47.48,
+      "high": 50.61,
+      "low": 46.29,
+      "close": 48.8
+    },
+    {
+      "date": "2018-01-01",
+      "open": 49.41,
+      "high": 49.95,
+      "low": 47.83,
+      "close": 49.2
+    },
+    {
+      "date": "2018-02-01",
+      "open": 49.83,
+      "high": 50.97,
+      "low": 48.75,
+      "close": 49.8
+    },
+    {
+      "date": "2018-03-01",
+      "open": 49.5,
+      "high": 51.35,
+      "low": 48.12,
+      "close": 50.1
+    },
+    {
+      "date": "2018-04-01",
+      "open": 48.95,
+      "high": 52.23,
+      "low": 47.69,
+      "close": 50.6
+    },
+    {
+      "date": "2018-05-01",
+      "open": 50.9,
+      "high": 52.78,
+      "low": 49.66,
+      "close": 50.9
+    },
+    {
+      "date": "2018-06-01",
+      "open": 50.18,
+      "high": 53.09,
+      "low": 49.05,
+      "close": 51.2
+    },
+    {
+      "date": "2018-07-01",
+      "open": 51.14,
+      "high": 52.04,
+      "low": 49.86,
+      "close": 51.5
+    },
+    {
+      "date": "2018-08-01",
+      "open": 50.67,
+      "high": 51.67,
+      "low": 49.98,
+      "close": 51.1
+    },
+    {
+      "date": "2018-09-01",
+      "open": 51.71,
+      "high": 52.37,
+      "low": 48.97,
+      "close": 50.8
+    },
+    {
+      "date": "2018-10-01",
+      "open": 51.17,
+      "high": 52.39,
+      "low": 49.19,
+      "close": 50.4
+    },
+    {
+      "date": "2018-11-01",
+      "open": 49.59,
+      "high": 51.54,
+      "low": 47.76,
+      "close": 50.1
+    },
+    {
+      "date": "2018-12-01",
+      "open": 49.97,
+      "high": 51.86,
+      "low": 48.7,
+      "close": 49.9
+    },
+    {
+      "date": "2019-01-01",
+      "open": 51.36,
+      "high": 52.7,
+      "low": 49.68,
+      "close": 51.0
+    },
+    {
+      "date": "2019-02-01",
+      "open": 51.51,
+      "high": 53.8,
+      "low": 50.55,
+      "close": 52.1
+    },
+    {
+      "date": "2019-03-01",
+      "open": 52.11,
+      "high": 55.03,
+      "low": 50.89,
+      "close": 53.2
+    },
+    {
+      "date": "2019-04-01",
+      "open": 53.0,
+      "high": 55.2,
+      "low": 52.06,
+      "close": 54.3
+    },
+    {
+      "date": "2019-05-01",
+      "open": 52.9,
+      "high": 56.8,
+      "low": 51.42,
+      "close": 55.4
+    },
+    {
+      "date": "2019-06-01",
+      "open": 55.27,
+      "high": 57.63,
+      "low": 53.99,
+      "close": 56.4
+    },
+    {
+      "date": "2019-07-01",
+      "open": 57.66,
+      "high": 58.89,
+      "low": 56.41,
+      "close": 57.3
+    },
+    {
+      "date": "2019-08-01",
+      "open": 57.33,
+      "high": 59.91,
+      "low": 55.59,
+      "close": 58.2
+    },
+    {
+      "date": "2019-09-01",
+      "open": 58.37,
+      "high": 60.85,
+      "low": 56.51,
+      "close": 59.1
+    },
+    {
+      "date": "2019-10-01",
+      "open": 58.55,
+      "high": 60.75,
+      "low": 56.67,
+      "close": 60.1
+    },
+    {
+      "date": "2019-11-01",
+      "open": 60.67,
+      "high": 62.37,
+      "low": 58.99,
+      "close": 61.1
+    },
+    {
+      "date": "2019-12-01",
+      "open": 60.96,
+      "high": 64.1,
+      "low": 59.01,
+      "close": 62.15
+    },
+    {
+      "date": "2020-01-01",
+      "open": 63.18,
+      "high": 63.77,
+      "low": 61.58,
+      "close": 62.8
+    },
+    {
+      "date": "2020-02-01",
+      "open": 62.1,
+      "high": 62.74,
+      "low": 58.25,
+      "close": 59.5
+    },
+    {
+      "date": "2020-03-01",
+      "open": 60.24,
+      "high": 61.42,
+      "low": 52.68,
+      "close": 53.8
+    },
+    {
+      "date": "2020-04-01",
+      "open": 52.34,
+      "high": 57.27,
+      "low": 51.84,
+      "close": 55.9
+    },
+    {
+      "date": "2020-05-01",
+      "open": 57.2,
+      "high": 59.49,
+      "low": 56.57,
+      "close": 57.8
+    },
+    {
+      "date": "2020-06-01",
+      "open": 57.04,
+      "high": 61.23,
+      "low": 55.61,
+      "close": 59.6
+    },
+    {
+      "date": "2020-07-01",
+      "open": 60.97,
+      "high": 62.65,
+      "low": 59.47,
+      "close": 61.2
+    },
+    {
+      "date": "2020-08-01",
+      "open": 60.16,
+      "high": 64.27,
+      "low": 59.19,
+      "close": 62.9
+    },
+    {
+      "date": "2020-09-01",
+      "open": 63.71,
+      "high": 65.64,
+      "low": 61.78,
+      "close": 64.4
+    },
+    {
+      "date": "2020-10-01",
+      "open": 65.06,
+      "high": 66.73,
+      "low": 64.36,
+      "close": 65.9
+    },
+    {
+      "date": "2020-11-01",
+      "open": 66.16,
+      "high": 69.21,
+      "low": 64.23,
+      "close": 67.4
+    },
+    {
+      "date": "2020-12-01",
+      "open": 67.41,
+      "high": 70.4,
+      "low": 66.79,
+      "close": 68.9
+    },
+    {
+      "date": "2021-01-01",
+      "open": 70.21,
+      "high": 72.08,
+      "low": 68.32,
+      "close": 70.0
+    },
+    {
+      "date": "2021-02-01",
+      "open": 69.42,
+      "high": 72.81,
+      "low": 68.3,
+      "close": 71.1
+    },
+    {
+      "date": "2021-03-01",
+      "open": 71.16,
+      "high": 72.72,
+      "low": 70.37,
+      "close": 72.2
+    },
+    {
+      "date": "2021-04-01",
+      "open": 71.02,
+      "high": 73.88,
+      "low": 69.19,
+      "close": 73.3
+    },
+    {
+      "date": "2021-05-01",
+      "open": 72.84,
+      "high": 76.05,
+      "low": 71.81,
+      "close": 74.4
+    },
+    {
+      "date": "2021-06-01",
+      "open": 72.98,
+      "high": 76.39,
+      "low": 71.71,
+      "close": 75.4
+    },
+    {
+      "date": "2021-07-01",
+      "open": 74.81,
+      "high": 77.18,
+      "low": 73.82,
+      "close": 76.5
+    },
+    {
+      "date": "2021-08-01",
+      "open": 77.85,
+      "high": 79.55,
+      "low": 76.24,
+      "close": 77.6
+    },
+    {
+      "date": "2021-09-01",
+      "open": 76.56,
+      "high": 79.85,
+      "low": 75.28,
+      "close": 78.7
+    },
+    {
+      "date": "2021-10-01",
+      "open": 78.21,
+      "high": 81.32,
+      "low": 76.81,
+      "close": 79.8
+    },
+    {
+      "date": "2021-11-01",
+      "open": 78.51,
+      "high": 81.74,
+      "low": 77.41,
+      "close": 80.95
+    },
+    {
+      "date": "2021-12-01",
+      "open": 82.21,
+      "high": 83.53,
+      "low": 81.53,
+      "close": 82.1
+    },
+    {
+      "date": "2022-01-01",
+      "open": 83.12,
+      "high": 84.75,
+      "low": 80.42,
+      "close": 81.6
+    },
+    {
+      "date": "2022-02-01",
+      "open": 80.67,
+      "high": 82.92,
+      "low": 79.1,
+      "close": 81.1
+    },
+    {
+      "date": "2022-03-01",
+      "open": 79.99,
+      "high": 82.38,
+      "low": 78.69,
+      "close": 80.7
+    },
+    {
+      "date": "2022-04-01",
+      "open": 80.75,
+      "high": 81.49,
+      "low": 78.27,
+      "close": 80.2
+    },
+    {
+      "date": "2022-05-01",
+      "open": 81.23,
+      "high": 82.37,
+      "low": 78.72,
+      "close": 79.8
+    },
+    {
+      "date": "2022-06-01",
+      "open": 79.54,
+      "high": 80.5,
+      "low": 78.68,
+      "close": 79.3
+    },
+    {
+      "date": "2022-07-01",
+      "open": 78.83,
+      "high": 81.45,
+      "low": 77.94,
+      "close": 80.2
+    },
+    {
+      "date": "2022-08-01",
+      "open": 81.04,
+      "high": 82.3,
+      "low": 79.92,
+      "close": 81.1
+    },
+    {
+      "date": "2022-09-01",
+      "open": 80.58,
+      "high": 82.63,
+      "low": 79.35,
+      "close": 81.95
+    },
+    {
+      "date": "2022-10-01",
+      "open": 82.84,
+      "high": 84.56,
+      "low": 81.1,
+      "close": 82.8
+    },
+    {
+      "date": "2022-11-01",
+      "open": 83.84,
+      "high": 85.77,
+      "low": 82.85,
+      "close": 83.7
+    },
+    {
+      "date": "2022-12-01",
+      "open": 84.84,
+      "high": 85.95,
+      "low": 83.13,
+      "close": 84.6
+    },
+    {
+      "date": "2023-01-01",
+      "open": 85.45,
+      "high": 87.21,
+      "low": 83.68,
+      "close": 85.7
+    },
+    {
+      "date": "2023-02-01",
+      "open": 87.08,
+      "high": 87.82,
+      "low": 85.77,
+      "close": 86.8
+    },
+    {
+      "date": "2023-03-01",
+      "open": 86.99,
+      "high": 89.21,
+      "low": 85.63,
+      "close": 87.9
+    },
+    {
+      "date": "2023-04-01",
+      "open": 86.73,
+      "high": 90.33,
+      "low": 85.16,
+      "close": 89.0
+    },
+    {
+      "date": "2023-05-01",
+      "open": 89.2,
+      "high": 91.04,
+      "low": 88.38,
+      "close": 90.1
+    },
+    {
+      "date": "2023-06-01",
+      "open": 89.4,
+      "high": 91.9,
+      "low": 88.07,
+      "close": 91.25
+    },
+    {
+      "date": "2023-07-01",
+      "open": 90.54,
+      "high": 93.26,
+      "low": 88.61,
+      "close": 92.5
+    },
+    {
+      "date": "2023-08-01",
+      "open": 93.05,
+      "high": 95.33,
+      "low": 91.41,
+      "close": 93.75
+    },
+    {
+      "date": "2023-09-01",
+      "open": 92.81,
+      "high": 96.26,
+      "low": 91.36,
+      "close": 95.0
+    },
+    {
+      "date": "2023-10-01",
+      "open": 94.33,
+      "high": 97.14,
+      "low": 92.57,
+      "close": 96.2
+    },
+    {
+      "date": "2023-11-01",
+      "open": 95.64,
+      "high": 98.04,
+      "low": 94.75,
+      "close": 97.45
+    },
+    {
+      "date": "2023-12-01",
+      "open": 97.18,
+      "high": 100.37,
+      "low": 95.34,
+      "close": 98.7
+    },
+    {
+      "date": "2024-01-01",
+      "open": 98.44,
+      "high": 100.44,
+      "low": 97.92,
+      "close": 99.8
+    },
+    {
+      "date": "2024-02-01",
+      "open": 98.37,
+      "high": 102.43,
+      "low": 97.68,
+      "close": 100.9
+    },
+    {
+      "date": "2024-03-01",
+      "open": 101.13,
+      "high": 103.03,
+      "low": 99.23,
+      "close": 102.0
+    },
+    {
+      "date": "2024-04-01",
+      "open": 102.84,
+      "high": 104.58,
+      "low": 101.43,
+      "close": 103.1
+    },
+    {
+      "date": "2024-05-01",
+      "open": 103.45,
+      "high": 105.22,
+      "low": 101.56,
+      "close": 104.25
+    },
+    {
+      "date": "2024-06-01",
+      "open": 103.4,
+      "high": 107.37,
+      "low": 102.2,
+      "close": 105.4
+    },
+    {
+      "date": "2024-07-01",
+      "open": 106.54,
+      "high": 108.39,
+      "low": 105.01,
+      "close": 106.6
+    },
+    {
+      "date": "2024-08-01",
+      "open": 107.14,
+      "high": 108.93,
+      "low": 105.26,
+      "close": 107.85
+    },
+    {
+      "date": "2024-09-01",
+      "open": 109.19,
+      "high": 110.79,
+      "low": 108.07,
+      "close": 109.1
+    },
+    {
+      "date": "2024-10-01",
+      "open": 108.91,
+      "high": 111.84,
+      "low": 108.37,
+      "close": 110.3
+    },
+    {
+      "date": "2024-11-01",
+      "open": 109.67,
+      "high": 113.25,
+      "low": 107.73,
+      "close": 111.55
+    },
+    {
+      "date": "2024-12-01",
+      "open": 110.42,
+      "high": 113.78,
+      "low": 108.77,
+      "close": 112.8
+    },
+    {
+      "date": "2025-01-01",
+      "open": 114.01,
+      "high": 115.02,
+      "low": 112.59,
+      "close": 113.9
+    },
+    {
+      "date": "2025-02-01",
+      "open": 114.08,
+      "high": 115.67,
+      "low": 112.5,
+      "close": 115.0
+    },
+    {
+      "date": "2025-03-01",
+      "open": 115.36,
+      "high": 116.79,
+      "low": 114.68,
+      "close": 116.1
+    },
+    {
+      "date": "2025-04-01",
+      "open": 115.66,
+      "high": 118.73,
+      "low": 114.19,
+      "close": 117.25
+    },
+    {
+      "date": "2025-05-01",
+      "open": 115.84,
+      "high": 119.43,
+      "low": 114.47,
+      "close": 118.4
+    },
+    {
+      "date": "2025-06-01",
+      "open": 118.05,
+      "high": 120.63,
+      "low": 117.19,
+      "close": 119.5
+    },
+    {
+      "date": "2025-07-01",
+      "open": 118.66,
+      "high": 122.01,
+      "low": 117.97,
+      "close": 120.7
+    },
+    {
+      "date": "2025-08-01",
+      "open": 121.18,
+      "high": 123.48,
+      "low": 119.28,
+      "close": 121.95
+    },
+    {
+      "date": "2025-09-01",
+      "open": 121.64,
+      "high": 123.92,
+      "low": 120.76,
+      "close": 123.2
+    },
+    {
+      "date": "2025-10-01",
+      "open": 121.77,
+      "high": 125.62,
+      "low": 120.85,
+      "close": 124.4
+    },
+    {
+      "date": "2025-11-01",
+      "open": 123.69,
+      "high": 127.57,
+      "low": 122.72,
+      "close": 125.65
+    },
+    {
+      "date": "2025-12-01",
+      "open": 125.93,
+      "high": 128.23,
+      "low": 124.17,
+      "close": 126.9
+    },
+    {
+      "date": "2026-01-01",
+      "open": 127.35,
+      "high": 129.37,
+      "low": 125.41,
+      "close": 128.1
+    },
+    {
+      "date": "2026-02-01",
+      "open": 127.4,
+      "high": 130.93,
+      "low": 125.95,
+      "close": 129.3
+    },
+    {
+      "date": "2026-03-01",
+      "open": 128.75,
+      "high": 131.02,
+      "low": 127.27,
+      "close": 130.5
+    },
+    {
+      "date": "2026-04-01",
+      "open": 131.93,
+      "high": 133.89,
+      "low": 130.54,
+      "close": 131.75
+    },
+    {
+      "date": "2026-05-01",
+      "open": 132.29,
+      "high": 134.89,
+      "low": 130.49,
+      "close": 133.0
+    },
+    {
+      "date": "2026-06-01",
+      "open": 134.22,
+      "high": 136.18,
+      "low": 133.1,
+      "close": 134.2
+    },
+    {
+      "date": "2026-07-01",
+      "open": 135.55,
+      "high": 137.3,
+      "low": 134.6,
+      "close": 135.45
+    },
+    {
+      "date": "2026-08-01",
+      "open": 134.98,
+      "high": 137.74,
+      "low": 134.18,
+      "close": 136.7
+    },
+    {
+      "date": "2026-09-01",
+      "open": 137.11,
+      "high": 139.21,
+      "low": 135.79,
+      "close": 138.0
+    },
+    {
+      "date": "2026-10-01",
+      "open": 138.87,
+      "high": 140.03,
+      "low": 137.5,
+      "close": 139.25
+    },
+    {
+      "date": "2026-11-01",
+      "open": 139.63,
+      "high": 142.34,
+      "low": 138.9,
+      "close": 140.5
+    },
+    {
+      "date": "2026-12-01",
+      "open": 141.85,
+      "high": 143.6,
+      "low": 140.03,
+      "close": 141.75
+    }
+  ],
+  "sales": [
+    {
+      "year": 2017,
+      "country": "USA",
+      "productA": 12000,
+      "productB": 8500,
+      "productC": 4200
+    },
+    {
+      "year": 2018,
+      "country": "USA",
+      "productA": 13500,
+      "productB": 9100,
+      "productC": 5000
+    },
+    {
+      "year": 2019,
+      "country": "USA",
+      "productA": 15000,
+      "productB": 9800,
+      "productC": 6100
+    },
+    {
+      "year": 2020,
+      "country": "USA",
+      "productA": 14200,
+      "productB": 11200,
+      "productC": 7400
+    },
+    {
+      "year": 2021,
+      "country": "USA",
+      "productA": 16800,
+      "productB": 12500,
+      "productC": 8900
+    },
+    {
+      "year": 2022,
+      "country": "USA",
+      "productA": 18500,
+      "productB": 13100,
+      "productC": 10200
+    },
+    {
+      "year": 2023,
+      "country": "USA",
+      "productA": 20100,
+      "productB": 14000,
+      "productC": 11800
+    },
+    {
+      "year": 2024,
+      "country": "USA",
+      "productA": 22400,
+      "productB": 14800,
+      "productC": 13500
+    },
+    {
+      "year": 2025,
+      "country": "USA",
+      "productA": 24000,
+      "productB": 15600,
+      "productC": 15200
+    },
+    {
+      "year": 2026,
+      "country": "USA",
+      "productA": 26500,
+      "productB": 16400,
+      "productC": 17100
+    },
+    {
+      "year": 2017,
+      "country": "Germany",
+      "productA": 8000,
+      "productB": 6200,
+      "productC": 3100
+    },
+    {
+      "year": 2018,
+      "country": "Germany",
+      "productA": 8800,
+      "productB": 6700,
+      "productC": 3600
+    },
+    {
+      "year": 2019,
+      "country": "Germany",
+      "productA": 9500,
+      "productB": 7300,
+      "productC": 4200
+    },
+    {
+      "year": 2020,
+      "country": "Germany",
+      "productA": 9100,
+      "productB": 8100,
+      "productC": 4900
+    },
+    {
+      "year": 2021,
+      "country": "Germany",
+      "productA": 11200,
+      "productB": 8900,
+      "productC": 5800
+    },
+    {
+      "year": 2022,
+      "country": "Germany",
+      "productA": 12400,
+      "productB": 9600,
+      "productC": 6700
+    },
+    {
+      "year": 2023,
+      "country": "Germany",
+      "productA": 13600,
+      "productB": 10200,
+      "productC": 7600
+    },
+    {
+      "year": 2024,
+      "country": "Germany",
+      "productA": 14900,
+      "productB": 10900,
+      "productC": 8700
+    },
+    {
+      "year": 2025,
+      "country": "Germany",
+      "productA": 16100,
+      "productB": 11600,
+      "productC": 9800
+    },
+    {
+      "year": 2026,
+      "country": "Germany",
+      "productA": 17400,
+      "productB": 12300,
+      "productC": 10900
+    },
+    {
+      "year": 2017,
+      "country": "Egypt",
+      "productA": 4500,
+      "productB": 3200,
+      "productC": 1500
+    },
+    {
+      "year": 2018,
+      "country": "Egypt",
+      "productA": 5200,
+      "productB": 3700,
+      "productC": 2000
+    },
+    {
+      "year": 2019,
+      "country": "Egypt",
+      "productA": 6100,
+      "productB": 4200,
+      "productC": 2600
+    },
+    {
+      "year": 2020,
+      "country": "Egypt",
+      "productA": 6800,
+      "productB": 4800,
+      "productC": 3200
+    },
+    {
+      "year": 2021,
+      "country": "Egypt",
+      "productA": 7800,
+      "productB": 5400,
+      "productC": 3900
+    },
+    {
+      "year": 2022,
+      "country": "Egypt",
+      "productA": 8900,
+      "productB": 6100,
+      "productC": 4600
+    },
+    {
+      "year": 2023,
+      "country": "Egypt",
+      "productA": 9900,
+      "productB": 6800,
+      "productC": 5300
+    },
+    {
+      "year": 2024,
+      "country": "Egypt",
+      "productA": 11000,
+      "productB": 7500,
+      "productC": 6000
+    },
+    {
+      "year": 2025,
+      "country": "Egypt",
+      "productA": 12100,
+      "productB": 8300,
+      "productC": 6800
+    },
+    {
+      "year": 2026,
+      "country": "Egypt",
+      "productA": 13200,
+      "productB": 9100,
+      "productC": 7600
+    }
+  ]
+}
