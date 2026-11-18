@@ -5,6 +5,7 @@ export interface Sales {
   productB: number;
   productC: number;
 }
+export type GlobalSales = Omit<Sales, "country">;
 
 export interface SharePrice {
   date: number;
@@ -22,6 +23,7 @@ export interface MarketShare {
   competitor2: number;
   others: number;
 }
+export type GlobalMarketShare = Omit<MarketShare, "country">;
 
 export interface KPI {
   revenueThisYear: number;
@@ -31,7 +33,15 @@ export interface KPI {
 }
 
 export const COUNTRIES = ["USA", "Germany", "Egypt", "Qatar"] as const;
-
 export type Country = (typeof COUNTRIES)[number];
 
-export type Product = "Product A" | "Product B" | "Product C";
+export const COMPANIES = [
+  "ourCompany",
+  "competitor1",
+  "competitor2",
+  "others",
+] as const;
+export type Company = (typeof COMPANIES)[number];
+
+export const PRODUCTS = ["productA", "productB", "productC"] as const;
+export type Product = (typeof PRODUCTS)[number];

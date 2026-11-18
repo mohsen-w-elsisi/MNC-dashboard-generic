@@ -45,7 +45,17 @@
       </section>
 
       <section id="tab-2">
-        <form id="filters"></form>
+        <form id="filters">
+          <label for="country-dropdown">Country:</label>
+          <select id="country-dropdown" name="country">
+            <option value="">All</option>
+          </select>
+
+          <fieldset>
+            <legend>Product:</legend>
+          </fieldset>
+        </form>
+
         <div id="market-share-chloropleth"></div>
         <div id="sales-bar-chart"></div>
         <div id="sales-timeseries"></div>

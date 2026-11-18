@@ -1,5 +1,7 @@
 import type { KPI, MarketShare, SharePrice, Sales } from "../data/models";
 
+import "./goalsBulletChart.ts";
+
 import createMarketShareChloropleth from "./marketShareChloropleth";
 import createMarketShareTimeseriesChart from "./marketShareTimeSeries";
 import createSalesBarChart from "./salesBarChart";

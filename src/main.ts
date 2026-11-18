@@ -1,7 +1,10 @@
 import "./style.css";
+
+import setupTabs from "./tabs.ts";
 import createCharts from "./charts/index.ts";
 import mockData from "./data/mockData/index.ts";
-import setupTabs from "./tabs.ts";
+import initFiltersUi from "./initFiltersUi.ts";
+import { COUNTRIES, PRODUCTS } from "./data/models";
 
 console.log("hello world!");
 
@@ -11,6 +14,8 @@ setupTabs({
   tab1: "tab-1",
   tab2: "tab-2",
 });
+
+initFiltersUi(COUNTRIES, PRODUCTS);
 
 createCharts(mockData, {
   marketShareTimeseriesChart: "market-share-timeseries",
