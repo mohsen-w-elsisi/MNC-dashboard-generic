@@ -34,6 +34,10 @@ class MarketShareTimeSeriesChart {
         panX: true,
         wheelX: "panX",
         wheelY: "zoomX",
+        cursor: am5xy.XYCursor.new(this.root, {
+          behavior: "zoomX",
+        }),
+        maxTooltipDistance: 0,
       }),
     );
 
@@ -81,6 +85,9 @@ class MarketShareTimeSeriesChart {
         valueYField: company,
         valueXField: "year",
         name: company,
+        tooltip: am5.Tooltip.new(this.root, {
+          labelText: `{name}: {valueY}%`,
+        }),
       }),
     );
 

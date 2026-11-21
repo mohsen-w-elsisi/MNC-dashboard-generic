@@ -34,13 +34,16 @@ class SalesTimeSeriesChart {
         panX: true,
         wheelX: "panX",
         wheelY: "zoomX",
+        cursor: am5xy.XYCursor.new(this.root, {
+          behavior: "zoomX",
+        }),
+        maxTooltipDistance: 0,
       }),
     );
 
     this.xAxis = this.chart.xAxes.push(
       am5xy.DateAxis.new(this.root, {
         baseInterval: { timeUnit: "year", count: 1 },
-        gridIntervals: [{ timeUnit: "year", count: 1 }],
         renderer: am5xy.AxisRendererX.new(this.root, {}),
       }),
     );
@@ -81,6 +84,9 @@ class SalesTimeSeriesChart {
         valueYField: product,
         valueXField: "date",
         name: product,
+        tooltip: am5.Tooltip.new(this.root, {
+          labelText: `{name}: {valueY}`,
+        }),
       }),
     );
     series.data.setAll(regionalData);

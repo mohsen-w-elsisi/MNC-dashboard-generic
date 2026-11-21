@@ -4,7 +4,7 @@ import setupTabs from "./tabs.ts";
 import createCharts from "./charts/index.ts";
 import mockData from "./data/mockData/index.ts";
 import initFiltersUi from "./initFiltersUi.ts";
-import { COUNTRIES, PRODUCTS } from "./data/models";
+import { COUNTRIES, PRODUCTS } from "./data/models.ts";
 
 console.log("hello world!");
 
