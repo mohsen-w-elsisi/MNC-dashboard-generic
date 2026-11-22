@@ -10,8 +10,8 @@
     <header>
       <h1>sales board</h1>
       <nav>
-        <button id="button-tab-1">over view</button>
-        <button id="button-tab-2">Details pie</button>
+        <md-outlined-button id="button-tab-1">over view</md-outlined-button>
+        <md-outlined-button id="button-tab-2">Details pie</md-outlined-button>
       </nav>
     </header>
 
@@ -39,27 +39,43 @@
           </div>
         </article>
 
-        <article id="bullet-chart">world</article>
-        
+        <article id="bullet-chart"></article>
+
         <article id="share-price-chart"></article>
       </section>
 
       <section id="tab-2">
         <form id="filters">
-          <label for="country-dropdown">Country:</label>
-          <select id="country-dropdown" name="country">
-            <option value="">All</option>
-          </select>
+          <h2>Filters</h2>
 
-          <fieldset>
-            <legend>Product:</legend>
-          </fieldset>
+          <label for="country-dropdown">Country:</label>
+
+          <md-outlined-select id="country-dropdown" name="country" required>
+            <md-select-option value="" selected>
+              <p slot="headline">All</p>
+            </md-select-option>
+          </md-outlined-select>
+
+          <label for="product-radio-group">Product:</label>
+
+          <div id="product-radio-group">
+            <span>
+              <md-radio
+                id="all-products"
+                name="product"
+                value=""
+                required="true"
+                checked="true"
+              ></md-radio>
+              <label for="all-products">All</label>
+            </span>
+          </div>
         </form>
 
-        <div id="market-share-chloropleth"></div>
-        <div id="sales-bar-chart"></div>
-        <div id="sales-timeseries"></div>
-        <div id="market-share-timeseries"></div>
+        <article id="market-share-chloropleth"></article>
+        <article id="sales-bar-chart"></article>
+        <article id="sales-timeseries"></article>
+        <article id="market-share-timeseries"></article>
       </section>
     </main>
 

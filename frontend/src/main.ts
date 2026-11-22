@@ -1,4 +1,9 @@
-import "./style.css";
+import "./styles/style.css";
+
+import "@material/web/button/outlined-button.js";
+import "@material/web/select/outlined-select.js";
+import "@material/web/select/select-option.js";
+import "@material/web/radio/radio.js";
 
 import setupTabs from "./tabs.ts";
 import createCharts from "./charts/index.ts";

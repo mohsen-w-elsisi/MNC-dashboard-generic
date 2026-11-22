@@ -1,0 +1,61 @@
+:root {
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-light: #dbeafe;
+  --text: #374151;
+  --shadow-color: #6b7280;
+  --surface: #ffffff;
+  --surface-elevated: #f3f4f6;
+
+  --shadow: 0 3px 9px rgb(55 65 81 / 16%);
+  --rounded-corner-radius: 1rem;
+}
+
+body {
+  margin: 0;
+
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+
+  background-color: var(--surface);
+}
+
+header {
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin-right: auto;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}
+
+section {
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+article,
+form {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: var(--rounded-corner-radius);
+  background-color: var(--surface-elevated);
+  box-shadow: var(--shadow);
+}

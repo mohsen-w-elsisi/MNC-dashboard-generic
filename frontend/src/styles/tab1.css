@@ -1,0 +1,49 @@
+#tab-1 {
+  display: grid;
+  grid-template-areas:
+    "kpis               bullet-chart"
+    "share-price-chart  share-price-chart";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1rem;
+  min-height: calc(100vh - 8rem);
+
+  #kpis {
+    grid-area: kpis;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+
+    .kpi-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid var(--accent-dark);
+      /* background-color: var(--accent-light); */
+      box-shadow: var(--shadow);
+      border-radius: var(--rounded-corner-radius);
+    }
+
+    .kpi-label {
+      font-size: 0.9rem;
+      color: var(--accent-dark);
+    }
+
+    .kpi-value {
+      font-size: 1.75rem;
+    }
+  }
+
+  #bullet-chart {
+    grid-area: bullet-chart;
+  }
+
+  #share-price-chart {
+    grid-area: share-price-chart;
+  }
+}
