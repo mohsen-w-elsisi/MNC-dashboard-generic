@@ -6,8 +6,8 @@ import createMarketShareChloropleth from "./marketShareChloropleth.ts";
 import createMarketShareTimeseriesChart from "./marketShareTimeSeries.ts";
 import createSalesBarChart from "./salesBarChart.ts";
 import createSalesTimeseriesChart from "./salesTimeSeries.ts";
-import createSharePriceChart from "./shareValueCandleStick.ts";
 import updateKPIs from "./kpis.ts";
+import createSharePriceChart from "./shareValueCandleStick.ts";
 
 export default function createCharts(
   data: {

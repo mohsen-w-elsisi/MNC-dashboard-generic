@@ -21,7 +21,7 @@ export default function setupTabs({
 
   const showTab = (activeIndex: number): void => {
     tabPanels.forEach((panel, index) => {
-      panel.hidden = index !== activeIndex;
+      panel.classList.toggle("show", index === activeIndex);
     });
   };
 
@@ -29,5 +29,19 @@ export default function setupTabs({
     button.addEventListener("click", () => showTab(index));
   });
 
+  setUpTileAnimation(tabPanels);
+
   showTab(0);
+}
+
+function setUpTileAnimation(tabPanels: HTMLElement[]) {
+  tabPanels[0].querySelectorAll("article").forEach((article, index) => {
+    article.style.setProperty("--fly-delay", `${index * 0.1}s`);
+  });
+
+  tabPanels[1]
+    .querySelectorAll<HTMLElement>("form, article")
+    .forEach((article, index) => {
+      article.style.setProperty("--fly-delay", `${index * 0.1}s`);
+    });
 }

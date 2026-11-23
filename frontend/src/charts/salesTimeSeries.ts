@@ -9,6 +9,7 @@ import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import { toGlobalSales } from "../data/transformations";
 import { filters } from "../filter";
+import { BasicTimeSeriesChart, seriesAnimationConfig } from "./common";
 
 export default function createSalesTimeseriesChart(
   data: Sales[],
@@ -17,62 +18,44 @@ export default function createSalesTimeseriesChart(
   new SalesTimeSeriesChart(rootId, data);
 }
 
-class SalesTimeSeriesChart {
-  private readonly data: Sales[];
-
-  private root: am5.Root;
-  private chart: am5xy.XYChart;
-  private xAxis: am5xy.DateAxis<am5xy.AxisRendererX>;
-  private yAxis: am5xy.ValueAxis<am5xy.AxisRendererY>;
-
+class SalesTimeSeriesChart extends BasicTimeSeriesChart<Sales> {
   constructor(rootId: string, data: Sales[]) {
-    this.data = data;
-
-    this.root = am5.Root.new(rootId);
-    this.chart = this.root.container.children.push(
-      am5xy.XYChart.new(this.root, {
-        panX: true,
-        wheelX: "panX",
-        wheelY: "zoomX",
-        cursor: am5xy.XYCursor.new(this.root, {
-          behavior: "zoomX",
-        }),
-        maxTooltipDistance: 0,
-      }),
-    );
-
-    this.xAxis = this.chart.xAxes.push(
-      am5xy.DateAxis.new(this.root, {
-        baseInterval: { timeUnit: "year", count: 1 },
-        renderer: am5xy.AxisRendererX.new(this.root, {}),
-      }),
-    );
-
-    this.yAxis = this.chart.yAxes.push(
-      am5xy.ValueAxis.new(this.root, {
-        min: 0,
-        renderer: am5xy.AxisRendererY.new(this.root, {}),
-      }),
-    );
-
-    filters.subscribe(({ product, country }) =>
-      this.updateSeries(product, country),
-    );
+    super(rootId, data, "Date", "Sales ($)");
   }
 
-  private updateSeries(product: Product | null, country: Country | null) {
-    this.chart.series.clear();
+  protected filters(): typeof filters {
+    return filters;
+  }
 
+  protected createSeries(): void {
+    this.chart.series.clear();
+    PRODUCTS.forEach((product) => {
+      this.createProductSeries(product, this.data);
+    });
+  }
+
+  protected updateSeries({
+    country,
+    product,
+  }: {
+    country: Country | null;
+    product: Product | null;
+  }) {
     const regionalData = country
       ? this.data.filter((sale) => sale.country === country)
       : toGlobalSales(this.data);
 
     if (product) {
-      this.createProductSeries(product, regionalData);
+      this.chart.series.each((series) => {
+        series.data.setAll(regionalData);
+        if (series.get("name") == product) series.show(100);
+        else series.hide(100);
+      });
     } else {
-      PRODUCTS.forEach((product) =>
-        this.createProductSeries(product, regionalData),
-      );
+      this.chart.series.each((series) => {
+        series.data.setAll(regionalData);
+        series.show(100);
+      });
     }
   }
 
@@ -84,6 +67,7 @@ class SalesTimeSeriesChart {
         valueYField: product,
         valueXField: "date",
         name: product,
+        ...seriesAnimationConfig,
         tooltip: am5.Tooltip.new(this.root, {
           labelText: `{name}: {valueY}`,
         }),

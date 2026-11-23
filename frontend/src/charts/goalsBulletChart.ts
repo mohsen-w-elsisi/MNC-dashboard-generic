@@ -1,8 +1,9 @@
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
+import { createXYChart } from "./common";
 
 const root = am5.Root.new("bullet-chart");
-const chart = root.container.children.push(am5xy.XYChart.new(root, {}));
+const chart = root.container.children.push(createXYChart(root));
 
 const data = [
   { category: "Egypt (2026)", value: 41.0, target: 38.0 },

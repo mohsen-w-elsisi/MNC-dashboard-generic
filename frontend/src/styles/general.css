@@ -59,3 +59,33 @@ form {
   background-color: var(--surface-elevated);
   box-shadow: var(--shadow);
 }
+
+#tab-1 article {
+  --fly-in-offset: -25vw;
+}
+
+#tab-2 article {
+  --fly-in-offset: 25vw;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+
+  &:not(.show) {
+    pointer-events: none;
+  }
+
+  &.show article {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: calc(0.5s + var(--fly-delay));
+  }
+
+  article {
+    transition-duration: 0.5s;
+    transition-delay: var(--fly-delay);
+    opacity: 0;
+    transform: translateX(var(--fly-in-offset));
+  }
+}

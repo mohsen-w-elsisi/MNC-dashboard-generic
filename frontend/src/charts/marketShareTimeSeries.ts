@@ -8,7 +8,8 @@ import {
   type MarketShare,
 } from "../data/models";
 import toGlobalMarketShare from "../data/transformations";
-import { filters } from "../filter";
+import { countryFilter } from "../filter";
+import { BasicTimeSeriesChart, seriesAnimationConfig } from "./common";
 
 export default function createMarketShareTimeseriesChart(
   data: MarketShare[],
@@ -17,61 +18,32 @@ export default function createMarketShareTimeseriesChart(
   new MarketShareTimeSeriesChart(rootId, data);
 }
 
-class MarketShareTimeSeriesChart {
-  private readonly data: MarketShare[];
-
-  private root: am5.Root;
-  private chart: am5xy.XYChart;
-  private xAxis: am5xy.DateAxis<am5xy.AxisRendererX>;
-  private yAxis: am5xy.ValueAxis<am5xy.AxisRendererY>;
-
+class MarketShareTimeSeriesChart extends BasicTimeSeriesChart<MarketShare> {
   constructor(rootId: string, data: MarketShare[]) {
-    this.data = data;
-
-    this.root = am5.Root.new(rootId);
-    this.chart = this.root.container.children.push(
-      am5xy.XYChart.new(this.root, {
-        panX: true,
-        wheelX: "panX",
-        wheelY: "zoomX",
-        cursor: am5xy.XYCursor.new(this.root, {
-          behavior: "zoomX",
-        }),
-        maxTooltipDistance: 0,
-      }),
-    );
-
-    this.xAxis = this.chart.xAxes.push(
-      am5xy.DateAxis.new(this.root, {
-        baseInterval: { timeUnit: "year", count: 1 },
-        gridIntervals: [{ timeUnit: "year", count: 1 }],
-        renderer: am5xy.AxisRendererX.new(this.root, {}),
-      }),
-    );
-
-    this.yAxis = this.chart.yAxes.push(
-      am5xy.ValueAxis.new(this.root, {
-        min: 0,
-        max: 100,
-        renderer: am5xy.AxisRendererY.new(this.root, {}),
-      }),
-    );
-
-    filters.subscribe(({ country }) => this.updateSeries(country));
-
-    this.updateSeries(null);
+    super(rootId, data, "Year", "Market Share (%)");
   }
 
-  private updateSeries(country: Country | null) {
+  protected filters(): typeof countryFilter {
+    return countryFilter;
+  }
+
+  protected createSeries(): void {
     this.chart.series.clear();
 
+    COMPANIES.forEach((company) => {
+      this.createCompanySeries(company, this.data);
+    });
+  }
+
+  protected updateSeries(country: Country | null) {
     const regionalData = country
       ? this.data.filter((share) => share.country === country)
       : toGlobalMarketShare(this.data);
 
-    COMPANIES.forEach((company) =>
-      this.createCompanySeries(company, regionalData),
-    );
+    this.chart.series.each((series) => {
+      series.data.setAll(regionalData);
+      series.show(100);
+    });
   }
 
   private createCompanySeries(
@@ -85,6 +57,7 @@ class MarketShareTimeSeriesChart {
         valueYField: company,
         valueXField: "year",
         name: company,
+        ...seriesAnimationConfig,
         tooltip: am5.Tooltip.new(this.root, {
           labelText: `{name}: {valueY}%`,
         }),
