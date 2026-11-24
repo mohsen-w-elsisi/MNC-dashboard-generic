@@ -64,6 +64,7 @@ def getMarketShare():
     ourCompany = request.args.get("ourCompany")
     competitorA = request.args.get("competitorA")
     competitorB = request.args.get("competitorB")
+    others = request.args.get("others")
     country = request.args.get("country")
     year = request.args.get("year")
     query = "SELECT * FROM marketShare WHERE 1=1"
@@ -78,6 +79,9 @@ def getMarketShare():
     if competitorB:
         query += " AND competitorB = ?"
         params.append(competitorB)
+    if others:
+        query += " AND others = ?"
+        params.append(others)
     if country:
         query += " AND country = ?"
         params.append(country)

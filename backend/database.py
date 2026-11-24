@@ -21,10 +21,11 @@ def create_tables():
         CREATE TABLE IF NOT EXISTS marketShare (
             ourCompany REAL DEFAULT 0.0,
             competitorA REAL DEFAULT 0.0,
-            competitorB REAL DEFAULT 0.0,           
+            competitorB REAL DEFAULT 0.0,
+            others REAL DEFAULT 0.0,           
             country TEXT NOT NULL,
             year INTEGER CHECK (year >= 2016 AND year < 2026),
-            PRIMARY KEY (ourCompany,competitorA,competitorB,country,year)
+            PRIMARY KEY (ourCompany,competitorA,competitorB,others,country,year)
         ) STRICT;
     """)
 

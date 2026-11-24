@@ -24,8 +24,9 @@ market_share_data = []
 for year, country in itertools.product(years, countries):
     our_company = round(random.uniform(15.0, 45.0), 2)
     comp_a = round(random.uniform(10.0, 35.0), 2)
-    comp_b = round(random.uniform(5.0, 100.0 - our_company - comp_a), 2)
-    market_share_data.append((our_company, comp_a, comp_b, country, year))
+    comp_b = round(random.uniform(5.0, 95.0 - our_company - comp_a), 2)
+    others = round(100.0 - our_company - comp_a - comp_b, 2)
+    market_share_data.append((our_company, comp_a, comp_b, others, country, year))
 
 share_value_data = []
 for year, month in itertools.product(years, months):

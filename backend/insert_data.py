@@ -14,8 +14,8 @@ with sqlite3.connect(db_path) as connection:
     """, sales_data)
 
     cursor.executemany("""
-        INSERT OR REPLACE INTO marketShare (ourCompany, competitorA, competitorB, country, year)
-        VALUES (?, ?, ?, ?, ?);
+        INSERT OR REPLACE INTO marketShare (ourCompany, competitorA, competitorB, others, country, year)
+        VALUES (?, ?, ?, ?, ?, ?);
     """, market_share_data)
 
     cursor.executemany("""
