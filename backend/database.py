@@ -1,6 +1,9 @@
 import sqlite3
+from pathlib import Path
+
+db_path = DB_PATH = Path(__file__).parent / "visualization_database.db"
 def create_tables():
-    connection = sqlite3.connect("visualization_database.db")
+    connection = sqlite3.connect(db_path)
     cursor = connection.cursor()
 
     cursor.execute("""

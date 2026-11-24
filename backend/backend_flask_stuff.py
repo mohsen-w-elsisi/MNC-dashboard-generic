@@ -1,13 +1,15 @@
 import sqlite3
+from pathlib import Path
 from flask import Flask, request, jsonify
 from datetime import datetime, timezone
 
 
+db_path = Path(__file__).parent / "visualization_database.db"
 app = Flask(__name__)
 
 @app.route("/api/sales")
 def getSales():
-    connection = sqlite3.connect("visualization_database.db")
+    connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
     cursor = connection.cursor()
 
@@ -51,7 +53,7 @@ def getSales():
 
 @app.route("/api/market-share")
 def getMarketShare():
-    connection = sqlite3.connect("visualization_database.db")
+    connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
     cursor = connection.cursor()
 
@@ -95,7 +97,7 @@ def getMarketShare():
 
 @app.route("/api/share-value")
 def getShareValue():
-    connection = sqlite3.connect("visualization_database.db")
+    connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
     cursor = connection.cursor()
 
