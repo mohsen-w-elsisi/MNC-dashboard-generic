@@ -1,5 +1,7 @@
 import sqlite3
 from flask import Flask, request, jsonify
+from datetime import datetime, timezone
+
 
 app = Flask(__name__)
 
@@ -9,25 +11,40 @@ def getSales():
     connection.row_factory = sqlite3.Row
     cursor = connection.cursor()
 
-    product = request.args.get("product")
+    productA = request.args.get("productA")
+    productB = request.args.get("productB")
+    productC = request.args.get("productC")
     country = request.args.get("country")
     year = request.args.get("year")
     query = "SELECT * FROM sales WHERE 1=1"
     params = []
 
-    if product:
-        query += " AND product = ?"
-        params.append(product)
+    if productA:
+        query += " AND productA = ?"
+        params.append(productA)
+    if productB:
+        query += " AND productB = ?"
+        params.append(productB)
+    if productC:
+        query += " AND productC = ?"
+        params.append(productC)
     if country:
         query += " AND country = ?"
         params.append(country)
     if year:
         query += " AND year = ?"
         params.append(year)
-
+    
+    query += " ORDER BY year ASC"
     cursor.execute(query,params)
     results_not_dict = cursor.fetchall()
-    results_dict = [dict(row) for row in results_not_dict]
+    results_dict = []
+    for row in results_not_dict:
+        row = dict(row)
+        date = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
+        actualTime = int(date.timestamp() * 1000)
+        row['actualTime'] = actualTime
+        results_dict.append(row)
     connection.close()
     
     return jsonify(results_dict)
@@ -38,15 +55,23 @@ def getMarketShare():
     connection.row_factory = sqlite3.Row
     cursor = connection.cursor()
 
-    company = request.args.get("company")
+    ourCompany = request.args.get("ourCompany")
+    competitorA = request.args.get("competitorA")
+    competitorB = request.args.get("competitorB")
     country = request.args.get("country")
     year = request.args.get("year")
     query = "SELECT * FROM marketShare WHERE 1=1"
     params = []
 
-    if company:
-        query += " AND company = ?"
-        params.append(company)
+    if ourCompany:
+        query += " AND ourCompany = ?"
+        params.append(ourCompany)
+    if competitorA:
+        query += " AND competitorA = ?"
+        params.append(competitorA)
+    if competitorB:
+        query += " AND competitorB = ?"
+        params.append(competitorB)
     if country:
         query += " AND country = ?"
         params.append(country)
@@ -54,9 +79,16 @@ def getMarketShare():
         query += " AND year = ?"
         params.append(year)
     
+    query += " ORDER BY year ASC"
     cursor.execute(query,params)
     results_not_dict = cursor.fetchall()
-    results_dict = [dict(row) for row in results_not_dict]
+    results_dict = []
+    for row in results_not_dict:
+        row = dict(row)
+        date = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
+        actualTime = int(date.timestamp() * 1000)
+        row['actualTime'] = actualTime
+        results_dict.append(row)
     connection.close()
     
     return jsonify(results_dict)
@@ -79,9 +111,16 @@ def getShareValue():
         query += " AND year = ?"
         params.append(year)
 
+    query += " ORDER BY year ASC, month ASC"
     cursor.execute(query,params)
     results_not_dict = cursor.fetchall()
-    results_dict = [dict(row) for row in results_not_dict]
+    results_dict = []
+    for row in results_not_dict:
+        row = dict(row)
+        date = datetime(year=row['year'], month=row['month'] + 1, day=1, tzinfo=timezone.utc)
+        actualTime = int(date.timestamp() * 1000)
+        row['actualTime'] = actualTime
+        results_dict.append(row)
     connection.close()
     
     return jsonify(results_dict)
