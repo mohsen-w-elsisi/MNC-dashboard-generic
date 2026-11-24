@@ -14,11 +14,11 @@ with sqlite3.connect(db_path) as connection:
     """, sales_data)
 
     cursor.executemany("""
-        INSERT OR REPLACE INTO marketShare (ourCompany, competitorA, competitorB, others, country, year)
+        INSERT OR REPLACE INTO marketShare (ourCompany, competitor1, competitor2, others, country, year)
         VALUES (?, ?, ?, ?, ?, ?);
     """, market_share_data)
 
     cursor.executemany("""
-        INSERT OR REPLACE INTO shareValue (shareValueOpen, shareValueClose, shareValueHigh, shareValueLow, month, year)
+        INSERT OR REPLACE INTO shareValue (open, close, high, low, month, year)
         VALUES (?, ?, ?, ?, ?, ?);
     """, share_value_data)

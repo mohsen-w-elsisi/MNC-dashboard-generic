@@ -20,21 +20,21 @@ def create_tables():
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS marketShare (
             ourCompany REAL DEFAULT 0.0,
-            competitorA REAL DEFAULT 0.0,
-            competitorB REAL DEFAULT 0.0,
+            competitor1 REAL DEFAULT 0.0,
+            competitor2 REAL DEFAULT 0.0,
             others REAL DEFAULT 0.0,           
             country TEXT NOT NULL,
             year INTEGER CHECK (year >= 2016 AND year < 2026),
-            PRIMARY KEY (ourCompany,competitorA,competitorB,others,country,year)
+            PRIMARY KEY (ourCompany,competitor1,competitor2,others,country,year)
         ) STRICT;
     """)
 
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS shareValue (
-            shareValueOpen REAL DEFAULT 0.0,
-            shareValueClose REAL DEFAULT 0.0,
-            shareValueHigh REAL DEFAULT 0.0,
-            shareValueLow REAL DEFAULT 0.0,                     
+            open REAL DEFAULT 0.0,
+            close REAL DEFAULT 0.0,
+            high REAL DEFAULT 0.0,
+            low REAL DEFAULT 0.0,                     
             month INTEGER CHECK (month >= 0 AND month <= 11),
             year INTEGER CHECK (year >= 2016 AND year < 2026),       
             PRIMARY KEY (month, year)
