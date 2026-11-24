@@ -47,9 +47,9 @@ def getSales():
     results_dict = []
     for row in results_not_dict:
         row = dict(row)
-        date = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
-        actualTime = int(date.timestamp() * 1000)
-        row['actualTime'] = actualTime
+        actualTime = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
+        date = int(actualTime.timestamp() * 1000)
+        row['date'] = date
         results_dict.append(row)
     connection.close()
     
@@ -95,9 +95,9 @@ def getMarketShare():
     results_dict = []
     for row in results_not_dict:
         row = dict(row)
-        date = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
-        actualTime = int(date.timestamp() * 1000)
-        row['actualTime'] = actualTime
+        actualTime = datetime(year=row['year'], month=1, day=1, tzinfo=timezone.utc)
+        date = int(actualTime.timestamp() * 1000)
+        row['date'] = date
         results_dict.append(row)
     connection.close()
     
@@ -127,9 +127,9 @@ def getShareValue():
     results_dict = []
     for row in results_not_dict:
         row = dict(row)
-        date = datetime(year=row['year'], month=row['month'] + 1, day=1, tzinfo=timezone.utc)
-        actualTime = int(date.timestamp() * 1000)
-        row['actualTime'] = actualTime
+        actualTime = datetime(year=row['year'], month=row['month'] + 1, day=1, tzinfo=timezone.utc)
+        date = int(actualTime.timestamp() * 1000)
+        row['date'] = date
         results_dict.append(row)
     connection.close()
     
