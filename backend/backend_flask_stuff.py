@@ -3,9 +3,13 @@ from pathlib import Path
 from flask import Flask, request, jsonify
 from datetime import datetime, timezone
 
-
 db_path = Path(__file__).parent / "visualization_database.db"
 app = Flask(__name__)
+
+@app.after_request
+def add_cors_headers(request):
+    request.headers["Access-Control-Allow-Origin"] = "*"
+    return request
 
 @app.route("/api/sales")
 def getSales():
