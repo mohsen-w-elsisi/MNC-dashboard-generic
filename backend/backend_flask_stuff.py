@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 
 db_path = Path(__file__).parent / "visualization_database.db"
 app = Flask(__name__)
+app.json.sort_keys = False
 
 @app.after_request
 def add_cors_headers(request):
