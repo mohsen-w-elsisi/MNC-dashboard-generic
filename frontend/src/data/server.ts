@@ -1,5 +1,5 @@
 import deriveKPIs from "./deriveKPIs";
-import type { Sales, MarketShare, SharePrice } from "./models";
+import type { Sales, MarketShare, SharePrice, StrategicObjectives } from "./models";
 
 export default async function fetchDataFromServer(serverUrl: string) {
   const salesResponse = await fetch(`${serverUrl}/api/sales`);
