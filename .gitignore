@@ -23,8 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# database
+frontend/index copy.ts
+
+# backend
 *.db
 __pycache__/
 backend/test.py
-frontend/index copy.ts
+.venv
+.mypy_cache
