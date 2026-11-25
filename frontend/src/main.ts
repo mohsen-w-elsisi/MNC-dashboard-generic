@@ -7,9 +7,9 @@ import "@material/web/radio/radio.js";
 
 import setupTabs from "./tabs.ts";
 import createCharts from "./charts/index.ts";
-import mockData from "./data/mockData/index.ts";
 import initFiltersUi from "./initFiltersUi.ts";
 import { COUNTRIES, PRODUCTS } from "./data/models.ts";
+import fetchDataFromServer from "./data/server.ts";
 
 console.log("hello world!");
 
@@ -22,7 +22,7 @@ setupTabs({
 
 initFiltersUi(COUNTRIES, PRODUCTS);
 
-createCharts(mockData, {
+createCharts(await fetchDataFromServer("http://127.0.0.1:5000"), {
   marketShareTimeseriesChart: "market-share-timeseries",
   sharePriceChart: "share-price-chart",
   salesBarChart: "sales-bar-chart",
