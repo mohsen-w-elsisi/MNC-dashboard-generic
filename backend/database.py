@@ -41,5 +41,16 @@ def create_tables():
         ) STRICT;
     """)
 
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS StrategicObjectives (
+            objective TEXT PRIMARY KEY NOT NULL,
+            bad REAL DEFAULT 0.0,
+            satisfactory REAL DEFAULT 0.0,
+            excellent REAL DEFAULT 0.0,
+            goal REAL DEFAULT 0.0,
+            current REAL DEFAULT 0.0                        
+        )
+    """)
+
     connection.commit()
     connection.close()

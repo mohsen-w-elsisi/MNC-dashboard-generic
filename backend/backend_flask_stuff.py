@@ -136,5 +136,26 @@ def getShareValue():
     
     return jsonify(results_dict)
 
+@app.route("/api/strategic-objectives")
+def getStrategicObjectives():
+    connection = sqlite3.connect(db_path)
+    connection.row_factory = sqlite3.Row
+    cursor = connection.cursor()
+
+    objective = request.args.get("objective")
+    query = "SELECT * FROM StrategicObjectives WHERE 1=1"
+    params= []
+
+    if objective:
+        query += " AND objective = ?"
+        params.append(objective)
+
+    cursor.execute(query,params)
+    results_not_dict = cursor.fetchall()
+    results_dict = [dict(row) for row in results_not_dict]
+    connection.close()
+    
+    return jsonify(results_dict)
+
 if __name__ == "__main__":
     app.run(debug=True)

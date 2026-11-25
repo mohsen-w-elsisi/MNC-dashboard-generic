@@ -35,3 +35,16 @@ for year, month in itertools.product(years, months):
     high_val = round(max(open_val, close_val) + random.uniform(1.0, 15.0), 2)
     low_val = round(min(open_val, close_val) - random.uniform(1.0, 15.0), 2)
     share_value_data.append((open_val, close_val, high_val, low_val, month, year))
+
+latest_close = share_value_data[-1][1]
+share_2025 = [row[0] for row in market_share_data if row[5] == 2025]
+avg_global_market_share = round(sum(share_2025) / len(share_2025), 2)
+
+sales_2025 = [row[0] + row[1] + row[2] for row in sales_data if row[4] == 2025]
+total_revenue_2025 = float(sum(sales_2025))
+
+strategic_objectives_data = [
+    ("sharePrice", 120.0, 150.0, 180.0, 200.0, latest_close),
+    ("globalMarketShare", 20.0, 28.0, 36.0, 42.0, avg_global_market_share),
+    ("revenue", 75000.0, 105000.0, 130000.0, 145000.0, total_revenue_2025),
+]
