@@ -25,6 +25,30 @@ export interface MarketShare {
 }
 export type GlobalMarketShare = Omit<MarketShare, "country">;
 
+export interface StrategicObjectives {
+  sharePrice: {
+    bad: number;
+    satisfactory: number;
+    excellent: number;
+    goal: number;
+    current: number;
+  };
+  globalMarketShare: {
+    bad: number;
+    satisfactory: number;
+    excellent: number;
+    goal: number;
+    current: number;
+  };
+  revenue: {
+    bad: number;
+    satisfactory: number;
+    excellent: number;
+    goal: number;
+    current: number;
+  };
+}
+
 export interface KPI {
   revenueThisYear: number;
   salesThisYear: number;
