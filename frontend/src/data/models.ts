@@ -16,7 +16,7 @@ export interface SharePrice {
 }
 
 export interface MarketShare {
-  year: number;
+  date: number;
   country: Country;
   ourCompany: number;
   competitor1: number;

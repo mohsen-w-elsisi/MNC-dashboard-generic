@@ -55,7 +55,7 @@ class MarketShareTimeSeriesChart extends BasicTimeSeriesChart<MarketShare> {
         xAxis: this.xAxis,
         yAxis: this.yAxis,
         valueYField: company,
-        valueXField: "year",
+        valueXField: "date",
         name: company,
         ...seriesAnimationConfig,
         tooltip: am5.Tooltip.new(this.root, {

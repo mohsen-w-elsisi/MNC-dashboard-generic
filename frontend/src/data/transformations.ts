@@ -3,10 +3,10 @@ import { COMPANIES, type MarketShare, type Sales } from "./models";
 export default function toGlobalMarketShare(
   data: MarketShare[],
 ): GlobalMarketShare[] {
-  return getYears(data).map((year) => {
-    const sharesForYear = data.filter((share) => share.year === year);
+  return getUniqueDates(data).map((date) => {
+    const sharesForYear = data.filter((share) => share.date === date);
     const totals: GlobalMarketShare = {
-      year,
+      date,
       ourCompany: 0,
       competitor1: 0,
       competitor2: 0,
@@ -53,8 +53,8 @@ export function toGlobalSales(data: Sales[]): GlobalSales[] {
   });
 }
 
-function getYears(data: { year: number }[]) {
-  const uniqueYears = new Set(data.map((share) => share.year));
+function getUniqueDates(data: { date: number }[]) {
+  const uniqueYears = new Set(data.map((share) => share.date));
   return [...uniqueYears].sort((left, right) => left - right);
 }
 

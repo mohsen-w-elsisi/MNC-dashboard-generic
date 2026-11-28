@@ -1,6 +1,6 @@
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
-import type { BehaviorSubject, Observable, Subject } from "rxjs";
+import type { Observable } from "rxjs";
 
 export function createXYChart(root: am5.Root) {
   return am5xy.XYChart.new(root, {
